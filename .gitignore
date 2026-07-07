@@ -1,56 +1,46 @@
-# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
-*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
 
-# C extensions
-*.so
-
-# Distribution / packaging
-build/
-dist/
-eggs/
-*.egg-info/
-*.egg
-
-# Virtual environments
-env/
 .venv/
 venv/
-ENV/
+env/
+*.egg-info/
 
-# Jupyter Notebook checkpoints
-.ipynb_checkpoints
-
-# Pytest cache
-.pytest_cache/
-
-# IDEs and editors
-.vscode/
-.idea/
-*.sublime-project
-*.sublime-workspace
-
-# OS files
-.DS_Store
-
-# Encrypted environment files
 .env
-.env.*
+*.key
+api_keys.json
+secrets.json
 
-# Data, models and outputs (do not track large binary files)
+external/
+
 data/raw/
 data/processed/
-data/splits/
-outputs/
+data/cache/
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.zip
+*.tar
+*.tar.gz
+
+outputs/experiments/
+outputs/predictions/
+outputs/logs/
+wandb/
+runs/
+
+checkpoints/
 models/
-outputs/models/
-*.ckpt
-*.pth
 *.pt
+*.pth
+*.ckpt
+*.safetensors
+*.bin
 
-# Logs
-*.log
-
-# Ignore local config files
-configs/local.yaml
+.DS_Store
+.vscode/
+.idea/

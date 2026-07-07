@@ -1,0 +1,9 @@
+[project]
+name = "tis-reproduce"
+version = "0.1.0"
+description = "Partial reproduction of the VSI-Bench evaluation pipeline."
+requires-python = ">=3.10"
+dependencies = []
+
+[tool.setuptools.packages.find]
+where = ["src"]
